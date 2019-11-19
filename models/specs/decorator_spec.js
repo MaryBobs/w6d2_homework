@@ -42,4 +42,14 @@ describe('Decorator', function () {
     actual = decorator.canPaintRoom(room);
     assert.strictEqual(actual, false)
   });
+  it('should be able to paint room if enough paint', function () {
+    room = new Room(10);
+    paint = new Paint(5);
+    decorator.addPaintCan(paint);
+    paint = new Paint(5);
+    decorator.addPaintCan(paint);
+    decorator.canPaintRoom(room);
+    actual = decorator.paintTheRoom(room)
+    assert.strictEqual(actual, true)
+  })
 })

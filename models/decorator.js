@@ -20,6 +20,15 @@ Decorator.prototype.canPaintRoom = function (room) {
     else {
       return false
     }
-}
+};
+
+Decorator.prototype.paintTheRoom = function (room) {
+  if (this.canPaintRoom(room) === true) {
+    room.paintRoom()
+    return room.painted}
+    else {
+      return false
+    }
+};
 
 module.exports = Decorator
