@@ -1,8 +1,10 @@
 const Decorator = function() {
-  this.paint_stock = []
+  this.paintStock = []
 }
 
-
+Decorator.prototype.addPaintCan = function (paint) {
+  this.paintStock.push(paint);
+};
 
 
 
