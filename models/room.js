@@ -1,6 +1,7 @@
-const Room = function(area) {
+const Room = function(area, painted) {
   this.area = area;
+  this.painted = painted;
 };
 
 
-module.exports = Room 
+module.exports = Room
