@@ -6,7 +6,7 @@ const Room = function(area, painted) {
 Room.prototype.paintRoom = function () {
   if (this.painted === false) {
     this.painted = true;
-  };
+  }
 };
 
 module.exports = Room
