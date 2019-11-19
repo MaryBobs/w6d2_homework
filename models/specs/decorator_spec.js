@@ -16,5 +16,11 @@ describe('Decorator', function () {
     decorator.addPaintCan(paint)
     actual = decorator.paintStock.length
     assert.deepStrictEqual(actual, 1)
+  });
+  it('should be able to calculate total litres of paint in stock', function () {
+    paint = new Paint(5);
+    decorator.addPaintCan(paint)
+    actual = decorator.calculatePaintLitres()
+    assert.strictEqual(actual, 5)
   })
 })
