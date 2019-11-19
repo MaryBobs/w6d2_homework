@@ -3,5 +3,10 @@ const Room = function(area, painted) {
   this.painted = painted;
 };
 
+Room.prototype.paintRoom = function () {
+  if (this.painted === false) {
+    this.painted = true;
+  };
+};
 
 module.exports = Room
